@@ -1,5 +1,8 @@
+; Author:		Fatih ALTINPINAR
+; Student Id:	150180707
+
 index	EQU 	10			;Assigning a global value to index
-		AREA fibonacci, code, readonly ;Declare new area
+		AREA fibonacci, code, readonly ;Reserve memory for code
 		ENTRY				;Declare as entry point
 		THUMB				;Ensures THUMB instruction set will be used
 		ALIGN 				;Ensures that __main addresses the following instruction.
@@ -40,5 +43,5 @@ return	POP	{R0,R2,PC}		;Popping values to their respected places R0, R2 takes th
 
 stop	B	 	stop		;Branch stop
 
-		ENDFUNC				;Finish Function
-		END					;Finish Assebly File
+		ENDFUNC				;End of the Function
+		END					;End of the File
