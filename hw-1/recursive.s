@@ -10,7 +10,7 @@ __main	FUNCTION			;Enable Debug
 		EXPORT __main		;Make __main as global to access from startup file
 		
 		
-; R0: index value, R1: Resulft of the fib function, R2: Current sum		
+; R0= index value, R1= Resulft of the fib function, R2= Current sum		
 		MOVS	R0, #index	;R0 shows the index of the currently running function
 		CMP 	R0, #0		;Validating input
 		BLE		inval 		;input is invalid if the input is less than or equal to zero
